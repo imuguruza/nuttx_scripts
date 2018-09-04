@@ -1,8 +1,8 @@
  #!/bin/bash
 
 cd nuttx
-cp .config defconfig
-find . -name "defconfig" -type f | xargs sed -i -e '/#/d'
+cp .config new_defconfig
+find . -name "new_defconfig" -type f | xargs sed -i -e '/#/d'
 
 for i in defconfig
 do
